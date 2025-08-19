@@ -1,0 +1,5 @@
+﻿# Development files
+*.log
+.DS_Store
+Thumbs.db
+

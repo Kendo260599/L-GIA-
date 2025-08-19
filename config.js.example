@@ -1,0 +1,25 @@
+﻿// Cấu hình API cho ứng dụng Phong Thủy
+// Copy file này thành config.js và thêm API key của bạn
+
+window.GROQ_CONFIG = {
+    // Lấy free API key tại: https://console.groq.com/
+    apiKey: 'your-groq-api-key-here',
+    
+    // Model sử dụng (khuyến nghị)
+    model: 'llama3-70b-8192',
+    
+    // API endpoint
+    baseURL: 'https://api.groq.com/openai/v1/chat/completions',
+    
+    // Cấu hình mặc định
+    defaultParams: {
+        temperature: 0.1,
+        max_tokens: 1000
+    }
+};
+
+// Export cho các module khác
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = window.GROQ_CONFIG;
+}
+
